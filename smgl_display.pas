@@ -1,7 +1,5 @@
 unit SMGL_Display;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses SMGL_SMSDL;
@@ -23,6 +21,7 @@ type
   Model = pointer;
   GameObject = pointer;
   Texture = pointer;
+  Font = pointer;
 
 const
   TEXTURE0 = $84C0;

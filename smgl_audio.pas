@@ -1,7 +1,5 @@
 unit SMGL_Audio;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses SMGL_SMSDL;

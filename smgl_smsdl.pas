@@ -1,7 +1,5 @@
 unit SMGL_SMSDL;
 
-{$mode objfpc}{$H+}
-
 interface
 
 const
