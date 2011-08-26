@@ -191,6 +191,9 @@ function vertexArrayObjectSupported : boolean; cdecl; external LIBNAME;
 procedure disableTexture2dArray; cdecl; external LIBNAME;
 function texture2dArrayDisabled : boolean; cdecl; external LIBNAME;
 
+procedure disableTextureRectangle; cdecl; external LIBNAME;
+function textureRectangleDisabled : boolean; cdecl; external LIBNAME;
+
 implementation
 
 end.
