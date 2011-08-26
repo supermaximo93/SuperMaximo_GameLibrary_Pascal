@@ -1,0 +1,11 @@
+*.o
+*.ppu
+backup/*
+*.ico
+*.lpi
+*.compiled
+*.sh
+*.rc
+*.manifest
+main
+main.*
