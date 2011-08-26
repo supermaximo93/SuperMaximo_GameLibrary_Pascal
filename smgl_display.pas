@@ -142,7 +142,7 @@ function screenDepth : cardinal; cdecl; external LIBNAME;
 function resizeScreen(width, height : cardinal; fullscreen : boolean) : boolean; cdecl; external LIBNAME;
 
 procedure setClearColor(r, g, b, a : single); cdecl; external LIBNAME;
-procedure getClearColor(r, g, b, a : psingle); cdecl; external LIBNAME;
+procedure getClearColor(r, g, b, a : pSingle); cdecl; external LIBNAME;
 
 function getPerspectiveMatrix6(left, right, bottom, top, front, back : single) : mat4; cdecl; external LIBNAME;
 function getPerspectiveMatrix4(angle, aspectRatio, front, back : single) : mat4; cdecl; external LIBNAME;
