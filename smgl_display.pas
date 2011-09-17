@@ -108,7 +108,7 @@ procedure vec2MultiplyFloat(vec : vec2; value : single); cdecl; external LIBNAME
 procedure vec2DivideFloat(vec : vec2; value : single); cdecl; external LIBNAME;
 function vec2Perpendicular(vec : vec2) : vec2; cdecl; external LIBNAME;
 function vec2DotProduct(vec, otherVec : vec2) : single; cdecl; external LIBNAME;
-function vec2PolygonCollision(vec : vec2; vertexCount : cardinal; vertices : array of vec2) : boolean; cdecl; external LIBNAME;
+function vec2PolygonCollision(vec : vec2; vertexCount : cardinal; vertices : array of vec2) : integer; cdecl; external LIBNAME;
 
 function vec3New : vec3; cdecl; external LIBNAME;
 procedure vec3Delete(vec : vec3); cdecl; external LIBNAME;
@@ -133,13 +133,13 @@ procedure vec4DivideFloat(vec : vec4; value : single); cdecl; external LIBNAME;
 function vec4DotProduct(vec, otherVec : vec4) : single; cdecl; external LIBNAME;
 
 function initDisplay(width, height, depth, maxFramerate : cardinal;
-          fullscreen: boolean; windowTitle : pChar) : boolean; cdecl; external LIBNAME;
+          fullscreen: integer; windowTitle : pChar) : integer; cdecl; external LIBNAME;
 procedure quitDisplay; cdecl; external LIBNAME;
 
 function screenWidth : cardinal; cdecl; external LIBNAME;
 function screenHeight : cardinal; cdecl; external LIBNAME;
 function screenDepth : cardinal; cdecl; external LIBNAME;
-function resizeScreen(width, height : cardinal; fullscreen : boolean) : boolean; cdecl; external LIBNAME;
+function resizeScreen(width, height : cardinal; fullscreen : integer) : integer; cdecl; external LIBNAME;
 
 procedure setClearColor(r, g, b, a : single); cdecl; external LIBNAME;
 procedure getClearColor(r, g, b, a : pSingle); cdecl; external LIBNAME;
@@ -177,22 +177,22 @@ function compensation : single; cdecl; external LIBNAME;
 
 procedure enableBlending(srcBlendFunc, dstBlendFunc, blendFuncEquation : cardinal); cdecl; external LIBNAME;
 procedure disableBlending; cdecl; external LIBNAME;
-function blendingEnabled : boolean; cdecl; external LIBNAME;
+function blendingEnabled : integer; cdecl; external LIBNAME;
 
 procedure enableDepthTesting; cdecl; external LIBNAME;
 procedure disableDepthTesting; cdecl; external LIBNAME;
-function depthTestingEnabled : boolean; cdecl; external LIBNAME;
+function depthTestingEnabled : integer; cdecl; external LIBNAME;
 
 function openGlVersion : single; cdecl; external LIBNAME;
 function glSlVersion : single; cdecl; external LIBNAME;
 
-function vertexArrayObjectSupported : boolean; cdecl; external LIBNAME;
+function vertexArrayObjectSupported : integer; cdecl; external LIBNAME;
 
 procedure disableTexture2dArray; cdecl; external LIBNAME;
-function texture2dArrayDisabled : boolean; cdecl; external LIBNAME;
+function texture2dArrayDisabled : integer; cdecl; external LIBNAME;
 
 procedure disableTextureRectangle; cdecl; external LIBNAME;
-function textureRectangleDisabled : boolean; cdecl; external LIBNAME;
+function textureRectangleDisabled : integer; cdecl; external LIBNAME;
 
 implementation
 

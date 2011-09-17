@@ -32,6 +32,9 @@ const
   SDL_INIT_EVENTTHREAD = $01000000;
   SDL_INIT_EVERYTHING = $0000FFFF;
 
+  SM_FALSE = 0;
+  SM_TRUE = 1;
+
 procedure initSDL(flags : cardinal); cdecl; external LIBNAME;
 procedure quitSDL; cdecl; external LIBNAME;
 procedure wait(time : longInt); cdecl; external LIBNAME;

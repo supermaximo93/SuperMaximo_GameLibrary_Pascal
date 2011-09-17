@@ -19,9 +19,9 @@ function modelNew(newName, path, fileName : pChar; framerate, bufferUsage : card
 procedure modelDelete(model_ : Model); cdecl; external LIBNAME;
 
 function modelName(model_ : Model) : pChar; cdecl; external LIBNAME;
-procedure modelDrawObject(model_ : Model; object_ : GameObject; skipAnimation : boolean); cdecl; external LIBNAME;
+procedure modelDrawObject(model_ : Model; object_ : GameObject; skipAnimation : integer); cdecl; external LIBNAME;
 procedure modelDraw(model_ : Model; x, y, z, xRotation, yRotation, zRotation, xScale, yScale, frame : single;
-          currentAnimationId : integer; skipAnimation : boolean); cdecl; external LIBNAME;
+          currentAnimationId : integer; skipAnimation : integer); cdecl; external LIBNAME;
 
 procedure modelBindShader(model_ : Model; shader_ : Shader); cdecl; external LIBNAME;
 function modleBoundShader(model_ : Model) : Shader; cdecl; external LIBNAME;

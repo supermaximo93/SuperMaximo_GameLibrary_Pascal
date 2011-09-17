@@ -8,7 +8,7 @@ function fontNew(name, fileName : pChar; newSize : cardinal) : Font; cdecl; exte
 procedure fontDelete(font_ : Font); cdecl; external LIBNAME;
 
 function fontName(font_ : Font) : pChar; cdecl; external LIBNAME;
-procedure fontWrite(font_ : Font; text : pChar; x, y : integer; depth : single; useCache : boolean; rotation, xScale, yScale : single); cdecl; external LIBNAME;
+procedure fontWrite(font_ : Font; text : pChar; x, y : integer; depth : single; useCache : integer; rotation, xScale, yScale : single); cdecl; external LIBNAME;
 function fontWidth(font_ : Font; text : pChar) : integer; cdecl; external LIBNAME;
 function fontHeight(font_ : Font; text : pChar) : integer; cdecl; external LIBNAME;
 procedure fontCacheText(font_ : Font; text : pChar); cdecl; external LIBNAME;
