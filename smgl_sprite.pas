@@ -20,6 +20,8 @@ procedure spriteDrawObject(sprite_ : Sprite; object_ : GameObject); cdecl; exter
 
 function spriteWidth(sprite_ : Sprite) : integer; cdecl; external LIBNAME;
 function spriteHeight(sprite_ : Sprite) : integer; cdecl; external LIBNAME;
+function spriteOriginX(sprite_ : Sprite) : integer; cdecl; external LIBNAME;
+function spriteOriginY(sprite_ : Sprite) : integer; cdecl; external LIBNAME;
 
 function spriteTexture(sprite_ : Sprite; frame : cardinal) : cardinal; cdecl; external LIBNAME;
 
