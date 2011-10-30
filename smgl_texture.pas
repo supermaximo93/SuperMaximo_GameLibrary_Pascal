@@ -17,6 +17,8 @@ procedure textureReload(texture_ : Texture; textureType, numLayers : cardinal; f
 
 function textureName(texture_ : Texture) : pChar; cdecl; external LIBNAME;
 function textureType(texture_ : Texture) : cardinal; cdecl; external LIBNAME;
+function textureWidth(texture_ : Texture) : integer; cdecl; external LIBNAME;
+function textureHeight(texture_ : Texture) : integer; cdecl; external LIBNAME;
 function textureData(texture_ : Texture) : cardinal; cdecl; external LIBNAME;
 
 implementation
