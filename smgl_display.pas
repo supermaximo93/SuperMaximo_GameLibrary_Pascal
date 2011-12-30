@@ -188,11 +188,13 @@ function glSlVersion : single; cdecl; external LIBNAME;
 
 function vertexArrayObjectSupported : integer; cdecl; external LIBNAME;
 
+procedure enableTexture2dArray; cdecl; external LIBNAME;
 procedure disableTexture2dArray; cdecl; external LIBNAME;
 function texture2dArrayDisabled : integer; cdecl; external LIBNAME;
 
+procedure enableTextureRectangle; cdecl; external LIBNAME;
 procedure disableTextureRectangle; cdecl; external LIBNAME;
-function textureRectangleDisabled : integer; cdecl; external LIBNAME;
+function textureRectangleEnabled : integer; cdecl; external LIBNAME;
 
 implementation
 
